@@ -1,12 +1,12 @@
-# Frequencia por Turma
+# Frequência por Turma
 
-Converte uma planilha de frequencia detalhada (por aluno e por dia) em uma planilha agregada por turma, com nome, CPF, faltas e porcentagem de frequencia de cada mes.
+Converte uma planilha de frequência detalhada (por aluno e por dia) em uma planilha agregada por turma, com nome, CPF, faltas e porcentagem de frequência de cada mês.
 
 ## O que faz
 
-Lê o relatório de Frequência Detalhado gerado pelo Conecta Educação que foi colocado na pasta `dados/`, processa todas as abas como meses de frequencia e gera `saida/frequencia_por_turma.xlsx` com uma aba por turma.
+Lê o relatório de Frequência Detalhado gerado pelo Conecta Educação que foi colocado na pasta `dados/`, processa todas as abas como meses de frequência e gera `saida/frequencia_por_turma.xlsx` com uma aba por turma.
 
-Apos o processamento, o arquivo de entrada e removido automaticamente para evitar reprocessamento e duplicacao de dados.
+Após o processamento, o arquivo de entrada é removido automaticamente para evitar reprocessamento e duplicação de dados.
 
 ## Como usar
 
@@ -17,22 +17,22 @@ Apos o processamento, o arquivo de entrada e removido automaticamente para evita
 uv run processar_frequencia.py
 ```
 
-3. O resultado sera salvo em `saida/frequencia_por_turma.xlsx`.
+3. O resultado será salvo em `saida/frequencia_por_turma.xlsx`.
 
 ## Requisitos
 
 - Python 3.14+
 - uv
-- Dependencias: pandas, openpyxl
+- Dependências: pandas, openpyxl
 
-Para instalar as dependencias:
+Para instalar as dependências:
 
 ```bash
 uv venv
 uv pip install pandas openpyxl
 ```
 
-## Compilar o executavel
+## Compilar o executável
 
 ```bash
 uv pip install pyinstaller pillow
@@ -41,4 +41,4 @@ uv run pyinstaller frequencia_por_turma.spec
 
 ## Aviso importante
 
-As pastas `dados/` e `saida/` contem informacoes pessoais de alunos. Por isso, **seu conteudo nao e versionado** neste repositorio, conforme a LGPD. Mantenha esses arquivos apenas localmente e nao os publique.
+As pastas `dados/` e `saida/` contêm informações pessoais de alunos. Por isso, **seu conteúdo não é versionado** neste repositório, conforme a LGPD. Mantenha esses arquivos apenas localmente e não os publique.
